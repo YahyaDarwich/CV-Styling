@@ -1,0 +1,307 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+      'Helvetica Neue', Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #333;
+  }
+hgroup h1{
+    color: black;
+    margin-left: 10%;
+}
+hgroup h2{
+    display: none;
+}
+
+img{
+    float: right;
+    transform: rotate(-20deg);
+    width: 150px;
+}
+#competencies{
+    display: grid;
+    grid-template-columns: 150px 600px;
+    grid-template-rows: 50px 50px;
+}
+#about{
+    width: 80%;
+    text-align: left;
+    margin-bottom: 7%;
+    opacity: 0.9;
+}
+#about h3{
+    display: none;
+}
+.content{
+    width: 80%;
+    margin: auto;
+}
+
+.skills-primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 2px;
+    align-items: center;
+    margin-left: 20px;
+}
+.skills-secondary{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2px;
+    grid-column: 2/3; grid-row: 2/3;
+    margin-left: 20px;
+}
+
+
+.skills-primary span{
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border-radius: 39% 61% 46% 54% / 50% 0% 100% 50% ;
+    width: 120px;
+    height: 25px;
+    display: inline-block;
+    padding: 5px;
+    color: honeydew;
+    text-align: center;
+}
+
+.skills-secondary span{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 39% 61% 46% 54% / 50% 0% 100% 50% ;
+    width: 120px;
+    height: 25px;
+    display: inline-block;
+    padding: 5px;
+    color: honeydew;
+    text-align: center;
+}
+div[data-skill="5"]>span:after{
+    content: " \269D \269D \269D";
+}
+div[data-skill="3"]>span:after{
+    content: " \269D \269D";
+}
+div[data-skill="1"]>span:after{
+    content: " \269D";
+}
+div[data-skill="9"]>span:after{
+    content: " \269D \269D \269D \269D";
+}
+div[data-skill="7"]>span:after{
+    content: " \269D \269D";
+}
+#experiences{
+    display: grid;
+    grid-template-columns: 150px 600px;
+    grid-template-rows: 180px 180px;
+}
+#experiences:first-child{
+    grid-column: 2/3; grid-row: 1/2;
+}
+#experiences:last-child{
+    grid-column: 2/3; grid-row: 2/3;
+}
+.experience-type:after{
+    content: " \005F";
+}
+#education{
+    display: grid;
+    grid-template-columns: 150px 600px;
+    grid-template-rows: 180px 180px;
+}
+#education:first-child{
+    grid-column: 2/3; grid-row: 1/2;
+}
+#education:last-child{
+    grid-column: 2/3; grid-row: 2/3;
+}
+#hobbies{
+    display: grid;
+    grid-template-columns: 150px 600px;
+    grid-template-rows: 110px;
+}
+#hobbies ul{
+    grid-column: 2/3; grid-row: 1/2;
+}
+
+p{
+    margin-left: 20px;
+    line-height: 20px;
+}
+.experience-details{
+    float: right;
+    margin-left: 20px;
+    opacity: 0.5;
+}
+.experience-date-separator{
+    color: red;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#contact h3{
+    display: none;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.contact-github{
+    background-image: url("images/github.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    width: 100px;
+    height: 100px;
+}
+.contact-github .contact-type ,dd{
+    display: none;
+}
+.contact-phone{
+    background-image: url("images/phone.png");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    width: 100px;
+    height: 100px;
+}
+.contact-phone .contact-type ,dd{
+    display: none;
+}
+.contact-facebook{
+    background-image: url("images/facebook.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    width: 100px;
+    height: 100px;
+}
+.contact-facebook .contact-type ,dd{
+    display: none;
+}
+.contact-skype{
+    background-image: url("images/skype.png");
+    background-repeat: no-repeat;
+    background-size: 70px;
+    width: 100px;
+    height: 100px;
+}
+.contact-skype .contact-type ,dd{
+    display: none;
+}
+.contact-email{
+    background-image: url("images/email.png");
+    background-repeat: no-repeat;
+    background-size: 80px;
+    width: 100px;
+    height: 100px;
+}
+.contact-email .contact-type ,dd{
+    display: none;
+}
+
+@media only screen and (min-width: 992px){
+    h3{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-right: 1px solid black;
+    }
+    h4{
+        margin-left: 20px;
+        color: #04AA6D;
+        margin-bottom: 2px;
+    }
+    img{
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px){
+    h3{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-right: 1px solid black;
+    }
+    img{
+        display: none;
+    }
+    h4{
+        margin-left: 20px;
+        color: #04AA6D;
+        margin-bottom: 2px;
+    }
+}
+@media only screen and (min-width: 1200px){
+    h3{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        border-right: 1px solid black;
+    }
+    h4{
+        margin-left: 20px;
+        color: #04AA6D;
+        margin-bottom: 2px;
+    }
+    img{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #333;
+    }
+    img{
+          display: none;
+    }
+    #about{
+        width: 100%;
+        text-align: left;
+        margin-bottom: 7%;
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+    h3{   
+        border-bottom: 1px solid black;
+        padding: 2px;
+    }
+
+    #competencies{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    #experiences{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    #education{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #hobbies{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;  
+    }
+    h4{
+        margin-left: 20px;
+        color: #04AA6D;
+        margin-bottom: 8px;
+    }
+}
+
