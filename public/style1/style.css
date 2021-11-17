@@ -1,0 +1,224 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+hgroup h1 ,h2{
+    color: rgb(209, 51, 51);
+    margin-left: 120px;
+    font-weight: bold;
+}
+header>div{
+    display: flex;
+    flex-direction: row;
+}
+header{
+background: rgb(196,196,196);
+background: linear-gradient(90deg, rgba(196,196,196,1) 0%, rgba(162,162,162,1) 100%);
+}
+#contact >h3{
+    display: none;
+}
+.contacts dt{
+    background: rgb(76,140,203);
+    background: linear-gradient(90deg, rgba(76,140,203,1) 0%, rgba(20,92,167,1) 100%);
+    color: white;
+    width: 45%;
+    margin: 0px;
+}
+.contacts dd{
+    background: rgb(74,198,205);
+    background: linear-gradient(90deg, rgba(74,198,205,1) 0%, rgba(22,155,171,1) 100%);
+    color: red;
+    width: 100%;
+    margin: 0px;
+}
+.contact-skype>dd{
+    background: rgb(74,198,205);
+    background: linear-gradient(90deg, rgba(74,198,205,1) 0%, rgba(22,155,171,1) 100%);
+    color: rgb(74,198,205);
+}
+
+.contacts a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #8400ff;
+}
+
+.contacts dl{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    gap:20px;
+    justify-content: center;
+}
+h3{
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 0.5px outset black;
+}
+h3:before{
+    content: "\26AB   ";
+    color: red; 
+}
+h4{
+    margin-bottom: 2px;
+}
+.experience >h4 .experience-institution{
+    font-size: 16px;
+    color: red;
+    font-weight: normal;
+}
+.experience >h4 .experience-type{
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+.experience-type:after{
+    content: " \0040";
+    font-weight: normal;
+}
+p{
+    line-height: 1.3rem;
+}
+.experience-details{
+    margin-left: 10px;
+    opacity: 0.5;
+}
+.experience-date-separator{
+    color: red;
+    font-weight: bold;
+    opacity: 1;
+}
+.skills-primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+.skills-primary .skill{
+    background-color: rgb(185, 185, 185);
+    padding: 5px;
+    border-radius: 7px;
+}
+.skills-primary span{
+    background: rgb(76,140,203);
+    background: linear-gradient(90deg, rgba(76,140,203,1) 0%, rgba(20,92,167,1) 100%);
+    display: inline-block;
+    padding: 5px;
+    color: honeydew;
+    border-radius: 5px;
+}
+div[data-skill="5"]>span{
+    width: 50%;
+}
+div[data-skill="3"]>span{
+    width: 30%;
+}
+div[data-skill="1"]>span{
+    width: 10%;
+}
+div[data-skill="9"]>span{
+    width: 90%;
+}
+div[data-skill="7"]>span{
+    width: 70%;
+}
+.skills-secondary{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2px;
+}
+.skills-secondary .skill{
+    background-color: rgb(212, 212, 212);
+    padding: 5px;
+    border-radius: 7px;
+}
+.skills-secondary span{
+    background: rgb(74,198,205);
+    background: linear-gradient(90deg, rgba(74,198,205,1) 0%, rgba(22,155,171,1) 100%);
+    display: inline-block;
+    padding: 5px;
+    color: honeydew;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px) {
+    header>div{
+        display: flex;
+        flex-direction:column;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 90%;
+        gap: 20px;
+        justify-content: center;
+    }
+    hgroup h1 ,h2{
+        color: rgb(209, 51, 51);
+        margin-left: 40px;
+    }
+    .contacts{
+        position: static;
+        bottom: 0px;
+        margin: auto;
+        width:100%;   
+    }
+    header>div{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media only screen and (min-width: 768px) {
+    img{
+        display: none;
+    }
+    .contacts{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width:50%;   
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (min-width: 992px) {
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width:40%;   
+    }
+    img{
+        display: block;
+    }
+} 
+
+@media only screen and (min-width: 1200px) {
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width:40%;   
+    }
+    img{
+        display: block;
+    }
+}
+
